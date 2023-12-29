@@ -6,37 +6,39 @@ body{
     display: flex;
     flex-direction: column;
     width: 280px;
-    height: 470px;
+    height: 480px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
-    /* border-style: solid; */
     padding: 15px;
     border-radius: 20px;
     justify-content: space-between;
     background-color: #282828;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
 }
 
 .display{
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 5px inset, 
-            rgba(0, 0, 0, 0.1) 0px 0px 8px 4px inset, 
-            rgba(0, 0, 0, 0.05) 0px 2px 1px, 
-            rgba(0, 0, 0, 0.07) 0px 4px 2px, 
-            rgba(0, 0, 0, 0.07) 0px 8px 4px, 
-            rgba(0, 0, 0, 0.07) 0px 16px 8px, 
-            rgba(0, 0, 0, 0.07) 0px 32px 16px;   
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     direction: rtl;
-    height: 75px;
-    padding: 10px;
+    height: 80px;
     background-color: #11a9568f;
     color: #202020ed;
     font-size: 25px;
+    padding: 10px;
     font-family: 'Orbitron', sans-serif;
     font-style: italic;
-    font-stretch: ultra-condensed;
     word-wrap: break-word;
+    text-shadow: -1px 1.5px 0px rgba(0,0,0,0.4);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 5px inset, 
+                rgba(0, 0, 0, 0.1) 0px 0px 8px 4px inset, 
+                rgba(0, 0, 0, 0.05) 0px 2px 1px, 
+                rgba(0, 0, 0, 0.07) 0px 4px 2px, 
+                rgba(0, 0, 0, 0.07) 0px 8px 4px, 
+                rgba(0, 0, 0, 0.07) 0px 16px 8px, 
+                rgba(0, 0, 0, 0.07) 0px 32px 16px;   
 }
 
 button{
@@ -47,8 +49,16 @@ button{
     background-color: #545454;
     color: #d6d6d6f4;
     font-size: 20px;
+    cursor: pointer;
     font-family: 'Quicksand', 'Roboto', sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button:active {
+  transform: translateY(3px);
+  box-shadow: none;
 }
 
 .buttons{
