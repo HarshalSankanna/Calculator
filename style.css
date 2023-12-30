@@ -1,3 +1,8 @@
+@font-face {
+    font-family:digital-7;
+    src: url('digital-7.ttf');
+}
+
 body{
     background-color: #fcb31b;
 }
@@ -18,18 +23,18 @@ body{
 }
 
 .display{
-    /* box-sizing: border-box; */
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    direction: rtl;
+    /* direction: rtl; */
     height: 80px;
     background-color: #11a9568f;
     color: #202020ed;
-    font-size: 25px;
+    font-size: 40px;
     padding: 10px;
-    font-family: 'Orbitron', sans-serif;
-    font-style: italic;
+     /* font-family: 'Orbitron', sans-serif; */
+    font-family: digital-7;
+    font-style: italic; 
     word-wrap: break-word;
     text-shadow: -1px 1.5px 0px rgba(0,0,0,0.4);
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 10px 5px inset, 
